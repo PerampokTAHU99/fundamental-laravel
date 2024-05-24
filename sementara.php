@@ -1,0 +1,16 @@
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro recusandae rerum perspiciatis nesciunt officiis enim dignissimos quae? Iusto nostrum a fugiat, obcaecati eum incidunt esse minima enim similique. Atque veritatis impedit, ipsum omnis dolorum facilis ex aliquam aut harum nulla quo! Ab sit sed, vitae ducimus quam iste molestiae!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur libero atque, voluptate soluta voluptatem quidem eos exercitationem optio ducimus. Earum eveniet quas accusamus nesciunt eos ea doloremque alias aliquid, minima repellat, distinctio at. Voluptates tempora illum, repudiandae fugit quae iure provident esse temporibus id laborum minus hic vitae fuga possimus quasi voluptatibus amet exercitationem nobis voluptate eum excepturi, saepe delectus labore assumenda. Omnis animi, recusandae sunt tempora voluptate accusamus consectetur debitis maxime unde, doloremque delectus, quasi facere. At molestias quas numquam enim delectus, quam dolore quia magnam sint minima esse earum repudiandae eveniet qui repellendus reiciendis nesciunt. A quod magni maxime iusto enim, excepturi vel quo amet eos. Culpa earum distinctio voluptatibus delectus quaerat quis eius enim optio atque ipsam officia doloribus modi repudiandae fuga magni, quibusdam cumque eos hic labore ipsum non, ratione quos numquam eaque. Minima ratione aut nobis ullam iste, ipsum facilis sint eum placeat, impedit nostrum?</p>
+
+Post::create([
+    'title' => 'Judul Ketiga',
+    'category_id' => '3',
+    'slug' => 'judul-ketiga',
+    'excerpt' => 'Lorem ipsum dolor ketiga',
+    'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro recusandae rerum perspiciatis nesciunt officiis enim dignissimos quae? Iusto nostrum a fugiat, obcaecati eum incidunt esse minima enim similique. Atque veritatis impedit, ipsum omnis dolorum facilis ex aliquam aut harum nulla quo! Ab sit sed, vitae ducimus quam iste molestiae!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur libero atque, voluptate soluta voluptatem quidem eos exercitationem optio ducimus. Earum eveniet quas accusamus nesciunt eos ea doloremque alias aliquid, minima repellat, distinctio at. Voluptates tempora illum, repudiandae fugit quae iure provident esse temporibus id laborum minus hic vitae fuga possimus quasi voluptatibus amet exercitationem nobis voluptate eum excepturi, saepe delectus labore assumenda. Omnis animi, recusandae sunt tempora voluptate accusamus consectetur debitis maxime unde, doloremque delectus, quasi facere. At molestias quas numquam enim delectus, quam dolore quia magnam sint minima esse earum repudiandae eveniet qui repellendus reiciendis nesciunt. A quod magni maxime iusto enim, excepturi vel quo amet eos. Culpa earum distinctio voluptatibus delectus quaerat quis eius enim optio atque ipsam officia doloribus modi repudiandae fuga magni, quibusdam cumque eos hic labore ipsum non, ratione quos numquam eaque. Minima ratione aut nobis ullam iste, ipsum facilis sint eum placeat, impedit nostrum?</p>'
+    ])
+
+
+Category::create([
+    'name' => 'Personal',
+    'slug' => 'personal'
+])
