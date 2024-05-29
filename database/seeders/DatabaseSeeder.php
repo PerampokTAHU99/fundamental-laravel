@@ -39,6 +39,10 @@ class DatabaseSeeder extends Seeder
            'name' => 'Web Programming',
            'slug' => 'web-programming'
         ]);
+        Category::create([
+            'name' => 'Web Design',
+            'slug' => 'web-design'
+         ]);
 
         Post::factory(20)->create();
         // Post::create([
