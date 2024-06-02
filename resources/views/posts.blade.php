@@ -30,7 +30,7 @@
               <div>
                 <a href="/categories/{{ $post->category->slug }}" class="text-decoration-none position-absolute px-3 py-2 text-white" style="background-color: rgba(0, 0, 0, 0.7)">{{ $post->category->name }}</a>
               </div>
-              <img class="card-img-top" src="https://picsum.photos/286/180?random={{ $posts[0]->category->name }}" alt="Card image cap">
+              <img class="card-img-top" src="https://picsum.photos/286/180?random={{ $post->category->name }}" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"><a href="/posts/{{ $post->title }}" class="text-decoration-none text-dark">{{ $post->title }}</a></h5>
                 <p class="card-text">
@@ -39,7 +39,7 @@
                   </small>
                 </p>
                 <p class="card-text">{{ $post->excerpt }}</p>
-                <a href="/posts/{{ $post->title }}" class="btn btn-primary">See More</a>
+                <a href="/posts/{{ $post->slug }}" class="btn btn-primary">See More</a>
               </div>
             </div>
           </div>
