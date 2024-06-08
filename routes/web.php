@@ -20,7 +20,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home',[
-        "title" => "Home"
+        "title" => "Home",
+        'active' => 'home',
     ]);
 });
 
@@ -29,7 +30,8 @@ Route::get('/about', function () {
         "title" => "About",
         "name" => "Theo Fahrizal Syam",
         "email" => "theofahrizals@gmail.com",
-        "image" => "me.jpg"
+        "image" => "me.jpg",
+        'active' => 'about',
 
     ]);
 });
@@ -62,6 +64,7 @@ Route::get('/categories/{category:slug}', function (Category $category) {
 Route::get('/authors/{author:username}', function (User $author) {
     return view('posts', [
         'title' => "Post By Author :  $author->name",
+        'active' => 'authors',
         'posts' => $author->posts->load('category','author')
     ]);         
 });
