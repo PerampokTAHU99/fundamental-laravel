@@ -6,7 +6,10 @@
       <div class="col-md-6">
         <form action="/blog " method="GET">
           @if (request('category'))
-              <input type="hidden" name="category" value="{{ request('category','users') }}">
+              <input type="hidden" name="category" value="{{ request('category') }}">
+          @endif
+          @if (request('author'))
+              <input type="hidden" name="author" value="{{ request('category') }}">
           @endif
           <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Find something?" name="search" value="{{ request('search') }}">

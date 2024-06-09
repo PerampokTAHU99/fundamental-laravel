@@ -39,10 +39,10 @@ class Post extends Model
             });
         });
 
-        $query->when($filters['users'] ?? false, function($query, $author){
-            return $query->whereHas('users',function($query) use ($author){    
-                $query->where('users.username',$author);
-            });
-        });
+        $query->when($filters['author'] ?? false,fn($query, $author)=>
+        $query->whereHas('author',fn($query)=>
+        $query->where('username',$author)
+            )
+        );
     }
 }
